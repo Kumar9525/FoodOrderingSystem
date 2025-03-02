@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Ordering System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="side-bar">
+        <div class="logo-box">
+          <img src="logo.png" alt="image can't find" />
+          <h2>QuickBite Grill</h2>
+          <p>A taste of luxury, redefined.</p>
+        </div>
+        <hr />
+        <div class="side-menu">
+          <h3>Quick Links</h3>
+          <ol>
+            <li>Home</li>
+            <li>Your Order</li>
+            <li>Wallet</li>
+            <li>Profile</li>
+            <li>Logout</li>
+          </ol>
+        </div>
+        <hr />
+        <div class="side-menu">
+          <h3>More About Us</h3>
+          <ol>
+            <li>Our Blog</li>
+            <li>Upcoming Dishes</li>
+            <li>Our Story</li>
+            <li>Social Media Links</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="main-scrollable-container">
+        <div class="nav-bar">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              class="input-box"
+              placeholder="Search Food Item"
+            />
+          </div>
+          <button class="signup-btn btn">Signup</button>
+          <button class="login-btn btn">Login</button>
+          <img class="right-logo" src="logo.png" alt="" />
+        </div>
+        <div class="hero">
+          <img src="hero.png" alt="" />
+        </div>
+        <div class="menu-bar">
+          <h2>Menu</h2>
+
+          <div id="card-items"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
