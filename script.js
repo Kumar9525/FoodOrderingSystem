@@ -61,11 +61,15 @@ function orderPrep(order) {
 
 // Simulating payment processing
 function payOrder(preparedOrder) {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      console.log("Order has been paid.");
-      resolve({ order_status: true, paid: true });
-    }, 1000);
+  return new Promise((resolve, reject) => {
+      setTimeout(() => {
+          if (preparedOrder.order_status) {
+              console.log("Order has been paid.");
+              resolve({ order_status: true, paid: true });
+          } else {
+              reject("Payment failed. Order not ready.");
+          }
+      }, 1000);
   });
 }
 
